@@ -29,6 +29,9 @@
             color: white;
             font-size: 30px;
         }
+        p{
+            color: white;
+        }
         .container{
             display: flex;
             gap: 15x;
@@ -42,6 +45,7 @@
         }
         .funcao{
             border-radius: 5px;
+            background-color:darkmagenta ;
 
         }
         .funcao:hover{
@@ -56,7 +60,7 @@
 
         <h1>Mágico dos Cálculos</h1>
         <p class="sub_titulo">Clique no botão abaixo!</p>
-        <button class="funcao" onclick="fazer_magica()">Clique aqui e veja a mágica!</button>
+        <button class="funcao" onclick="fazer_magica()">Veja a mágica!</button>
         <p>Se quiser tentar de novo, clique novamente no botão!</p>
 
     </div>
@@ -67,12 +71,13 @@
         <script>
             function fazer_magica(){
                 alert('Bem vindo ao mágico da calculadora! Eu farei uma mágica que deixará seus cabelos ao céus!');
-                
+
                 let numero_desejado = Number(prompt('Primeiramente, digite o número que você deseja chegar: '));
                 alert('Agora pegue sua calculardora e digite um número aleatorio e guarde ele em algum lugar: ');
 
                 alert('Agora multiplique seu número por 2');
                 let magica = numero_desejado * 2;
+
                 alert('Agora adicione esse número ao seu número aleatório:'+magica);
                 alert('Agora divida ele por 2');
                 alert('Agora subtraia pelo numero aleatorio');
