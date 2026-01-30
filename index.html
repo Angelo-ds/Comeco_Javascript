@@ -38,7 +38,7 @@
             flex-direction: column;
             align-items: center;
             height: 50vh;
-            width: 50vw;
+            width: 55vw;
             background-color: darkmagenta;
             border-radius: 20px;
             box-shadow: black 3px 3px 3px;
@@ -48,7 +48,7 @@
             width: 200px;
             border-radius: 5px;
             background-color:darkmagenta ;
-            font-size: 25px;
+            font-size: 20px;
             color: white;
 
         }
@@ -58,13 +58,26 @@
             box-shadow: 0 4px 8px black;
             
         }
+
+        .botoes{
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+        }
     </style>
 <body>
     <div class="container">
 
         <h1>Mágico dos Cálculos🧙‍♂️</h1>
         <p class="sub_titulo">Clique no botão abaixo!</p>
-        <button class="funcao" onclick="fazer_magica()">Veja a mágica!</button>
+        <div class="botoes">
+            <button class="funcao" onclick="fazer_magica()">Veja a mágica!</button>
+            <button class="funcao" onclick="fazer_magica_denovo()">Veja a mágica novamente!</button>
+            <button class="funcao" onclick="explicar_a_magica()">Quer que eu explique?</button>
+            <button class="funcao" onclick="magica_tripla()">Com outros olhos!</button>
+            <button class="funcao" onclick="apelido_na_magica()">Quer um apelido?</button>
+        </div>
+
         <p>Se quiser tentar de novo, clique novamente no botão!</p>
 
     </div>
@@ -82,12 +95,76 @@
                 alert('Agora multiplique seu número por 2');
                 let magica = numero_desejado * 2;
 
-                alert('Agora adicione esse número ao seu número aleatório:'+magica);
+                alert('Agora adicione esse número ao seu número aleatório: '+magica+'🎆 agora caso você não lebre, seu número é: '+numero_aleatorio * 2);
                 alert('Agora divida ele por 2');
                 alert('Agora subtraia pelo numero aleatorio');
                 alert('ABRACADABA!!, agora você deve ter '+numero_desejado+'!');
-                alert('Se funcionou parabéns🎉, se não funcionou por favor, tente novamente!❤');
+                alert('Se funcionou parabéns, se não funcionou por favor, tente novamente!');
             }
+            function fazer_magica_denovo(){
+                alert('Bem vindo ao mágico da calculadora! Eu farei uma mágica que deixará seus cabelos ao céus!');
+
+                let numero_desejado = Number(prompt('Primeiramente, digite o número que você deseja chegar: '));
+                let numero_aleatorio = Number(prompt('Agora pegue sua calculadora e digite um número aleatorio e guarde ele em algum lugar: '));
+
+                alert('Agora multiplique seu número por dois!🎀');
+                let magica = numero_desejado * 2;
+
+                alert('Agora adicione esse número ao seu número aleatório: '+magica+'🎆 agora caso você não lebre, seu número é: '+numero_aleatorio * 2);
+                alert('Agora divida ele por 2');
+                alert('Agora subtraia pelo numero aleatorio🎇');
+                alert('ABRACADABA!!✨, agora você deve ter '+numero_desejado+'!');
+                alert('Se funcionou parabéns🎉, se não funcionou por favor, tente novamente!❤');
+
+            }
+            function explicar_a_magica(){
+                alert('Você sabe que um mágico nunca fala seus truques né? Mas como eu já fiz a mágico sinto que devo fazer uma excessão.');
+                alert('Bem, a mágica funciona assim: ');
+                alert('Primeiro eu peço o número que você quer que apareça na calculardora!');
+                alert('Depois, dentro de minha mente eu multiplico ele por 2 ou 3, dependendo da opção que você escolheu!');
+                alert('Após isso, eu peço para você colocar um número qualquer, sim essa mágico funciona com QUALQUER número!');
+                alert('E peço para você multiplicar por dois, isso facilita a proxima etapa!');
+                alert('Que é a adição! Aqui é onde acontece a mágica, pois lembra que eu falei que eu multipliquei o numero desejado por dois?');
+                alert('Pois é! Após a multiplicação dos dois números peço para você somar eles para fazer a divisão!');
+                alert('A divisão é crucial pois é aonde o seu numero desejaod aparece, pois após dividir o reusltado da adição por dois, eu peço pela subtração');
+                alert('A subtração é onde a mágica se revela e seu número apareçe!');
+                alert('Espero ter conseguido explicar, se necessário só apertar o botão novamente!');
+
+            }
+            function magica_tripla(){
+                alert('Bem vindo ao mágico da calculadora! Eu farei uma mágica que deixará seus cabelos ao céus!');
+
+                let numero_desejado = Number(prompt('Primeiramente, digite o número que você deseja chegar: '));
+                let numero_aleatorio = Number(prompt('Agora pegue sua calculadora e digite um número aleatorio e guarde ele em algum lugar: '));
+
+                alert('Agora multiplique seu número por três!🎀');
+                let magica = numero_desejado * 3;
+
+                alert('Agora adicione esse número ao seu número aleatório: '+magica+'🎆 agora caso você não lembre, seu número é: '+numero_aleatorio * 2);
+                alert('Agora divida ele por 3');
+                alert('Agora subtraia pelo numero aleatorio🎇');
+                alert('ABRACADABA!!✨, agora você deve ter '+numero_desejado+'!');
+                alert('Se funcionou parabéns🎉, se não funcionou por favor, tente novamente!❤');
+
+                }
+            function apelido_na_magica(){
+                alert('Bem vindo ao mágico da calculadora! Eu farei uma mágica que deixará seus cabelos ao céus!');
+
+                let numero_desejado = Number(prompt('Primeiramente, digite o número que você deseja chegar: '));
+                let apelido = prompt('Vamos mudar um pouco? Me fale seu nome ou apelido para eu te chamar: ');
+                alert('Obrigado '+apelido+', vamos continuar a mágica!');
+                let numero_aleatorio = Number(prompt('Pegue sua calculadora e digite um número aleatorio e guarde ele em algum lugar: '));
+
+                alert('Agora multiplique seu número por dois!🎀');
+                let magica = numero_desejado * 2;
+                alert('Agora adicione esse número ao seu número aleatório: '+magica+'🎆 agora caso você não lembre, seu número é: '+numero_aleatorio * 2);
+                alert('Agora divida ele por 2');
+                alert('Agora subtraia pelo numero aleatorio🎇');
+                alert('olhe '+apelido+ 'ABRACADABA!!✨, agora você deve ter '+numero_desejado+'!');
+                alert('Se funcionou parabéns🎉, se não funcionou por favor, tente novamente!❤');
+
+                }
+
         </script>
   
 </body>
