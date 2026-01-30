@@ -37,16 +37,17 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            flex-wrap: wrap;
             height: 50vh;
-            width: 55vw;
+            width: 50vw;
             background-color: darkmagenta;
             border-radius: 20px;
-            box-shadow: black 3px 3px 3px;
+            box-shadow: black 5px 5px 5px;
         }
         .funcao{
             height: 50px;
             width: 200px;
-            border-radius: 5px;
+            border-radius: 20px;
             background-color:darkmagenta ;
             font-size: 20px;
             color: white;
@@ -55,30 +56,31 @@
         .funcao:hover{
             cursor: pointer;
             transform: scale(1.05);
-            box-shadow: 0 4px 8px black;
+            box-shadow: 2px 4px 4px black;
             
         }
 
         .botoes{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             gap: 7px;
         }
     </style>
 <body>
     <div class="container">
 
-        <h1>Mágico dos Cálculos🧙‍♂️</h1>
-        <p class="sub_titulo">Clique no botão abaixo!</p>
+        <h1>✨Mágico dos Cálculos🎩</h1>
+        <p class="sub_titulo">Clique em um dos botões ao lado!</p>
         <div class="botoes">
             <button class="funcao" onclick="fazer_magica()">Veja a mágica!</button>
             <button class="funcao" onclick="fazer_magica_denovo()">Veja a mágica novamente!</button>
             <button class="funcao" onclick="explicar_a_magica()">Quer que eu explique?</button>
-            <button class="funcao" onclick="magica_tripla()">Com outros olhos!</button>
+            <button class="funcao" onclick="magica_tripla()">Modo triplo</button>
+            <button class="funcao" onclick="funcao_na_magica()">Modo "Fator escolhido"</button>
             <button class="funcao" onclick="apelido_na_magica()">Quer um apelido?</button>
         </div>
 
-        <p>Se quiser tentar de novo, clique novamente no botão!</p>
+        <p>Para tentar denovo, aperte no botão novamente!</p>
 
     </div>
 
@@ -126,7 +128,7 @@
                 alert('E peço para você multiplicar por dois, isso facilita a proxima etapa!');
                 alert('Que é a adição! Aqui é onde acontece a mágica, pois lembra que eu falei que eu multipliquei o numero desejado por dois?');
                 alert('Pois é! Após a multiplicação dos dois números peço para você somar eles para fazer a divisão!');
-                alert('A divisão é crucial pois é aonde o seu numero desejado aparece, pois após dividir o resultado da adição por dois, seu número aparee por conta da multiplicação! Já a proxima etapa..');
+                alert('A divisão é crucial pois é aonde o seu numero desejado aparece, pois após dividir o resultado da adição por dois, seu número aparece por conta da multiplicação! Já a proxima etapa..');
                 alert('É a subtração! Onde a mágica se revela e seu número apareçe!');
                 alert('Espero ter conseguido explicar, se necessário só apertar o botão novamente!');
 
@@ -147,6 +149,22 @@
                 alert('Se funcionou parabéns🎉, se não funcionou por favor, tente novamente!❤');
 
                 }
+            function funcao_na_magica(){
+                alert('Bem vindo ao mágico da calculadora! Eu farei uma mágica que deixará seus cabelos ao céus!');
+
+                let numero_desejado = Number(prompt('Primeiramente, digite o número que você deseja chegar: '));
+                let numero_aleatorio = Number(prompt('Agora pegue sua calculadora e digite um número aleatorio e guarde ele em algum lugar: '));
+
+                let fator_escolhido = Number(prompt('Agora digite um número para que seu número seja multiplicado: '));
+                let magica = numero_desejado * fator_escolhido;
+
+                alert('Agora adicione esse número ao seu número aleatório: '+magica+'🎆 caso você não lembre, seu número é: '+numero_aleatorio * fator_escolhido);
+                alert('Agora divida ele por '+fator_escolhido);
+                alert('Agora subtraia pelo numero aleatorio🎇');
+                alert('ABRACADABA!!✨, agora você deve ter '+numero_desejado+'!');
+                alert('Se funcionou parabéns🎉, se não funcionou por favor, tente novamente!❤');
+
+                }
             function apelido_na_magica(){
                 alert('Bem vindo ao mágico da calculadora! Eu farei uma mágica que deixará seus cabelos ao céus!');
 
@@ -160,7 +178,7 @@
                 alert('Agora adicione esse número ao seu número aleatório: '+magica+'🎆 agora caso você não lembre, seu número é: '+numero_aleatorio * 2);
                 alert('Agora divida ele por 2');
                 alert('Agora subtraia pelo numero aleatorio🎇');
-                alert('olhe '+apelido+ 'ABRACADABA!!✨, agora você deve ter '+numero_desejado+'!');
+                alert('ABRACADABA!!✨'+apelido+ ', agora você deve ter '+numero_desejado+'!');
                 alert('Se funcionou parabéns🎉, se não funcionou por favor, tente novamente!❤');
 
                 }
