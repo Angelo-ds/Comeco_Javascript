@@ -4,32 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>JS hellow</title>
+    <title>Mágico</title>
 
 </head>
     <style>
         body{
         display: flex;
-        color: pink;
+        background-color: purple;
         width: 100vw;
         height: 100vh;
         justify-content: center;
         align-items: center;
         overflow: hidden; 
         }
+
+        h1{
+            font-size: 50px;
+            color: white;
+            align-items: center;
+
+        }
+        .sub_titulo{
+            margin: 20px;
+            color: white;
+            font-size: 30px;
+        }
+        .container{
+            display: flex;
+            gap: 15x;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 50vh;
+            width: 50vw;
+            background-color: darkmagenta;
+            border-radius: 20px;
+        }
+        .funcao{
+            border-radius: 5px;
+
+        }
+        .funcao:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px black;
+            
+        }
     </style>
 <body>
+    <div class="container">
 
-    <p>JS Hellow</p>
+        <h1>Mágico dos Cálculos</h1>
+        <p class="sub_titulo">Clique no botão abaixo!</p>
+        <button class="funcao" onclick="fazer_magica()">Clique aqui e veja a mágica!</button>
+        <p>Se quiser tentar de novo, clique novamente no botão!</p>
+
+    </div>
+
+
     
     <!--tudo que for de JS poe dentro do script-->
-    <script>
-        alert('Bem vindo ao mágico da calculadora!');
-        let numero_desejado = Number(prompt('Digite o número que você deseja chegar: '));
-        let numero_aleatorio = Number(prompt('Agora digite um número aleatorio, guarde ele em algum lugar: '));
-        let magica = numero_desejado * 2;
-        
-    </script>
-    
+        <script>
+            function fazer_magica(){
+                alert('Bem vindo ao mágico da calculadora! Eu farei uma mágica que deixará seus cabelos ao céus!');
+                
+                let numero_desejado = Number(prompt('Primeiramente, digite o número que você deseja chegar: '));
+                alert('Agora pegue sua calculardora e digite um número aleatorio e guarde ele em algum lugar: ');
+
+                alert('Agora multiplique seu número por 2');
+                let magica = numero_desejado * 2;
+                alert('Agora adicione esse número ao seu número aleatório:'+magica);
+                alert('Agora divida ele por 2');
+                alert('Agora subtraia pelo numero aleatorio');
+                alert('Pronto, agora você deve ter '+numero_desejado+'!');
+                alert('Se funcionou parabéns, se não funcionou por favor, tente novamente!');
+            }
+        </script>
+  
 </body>
 </html>
