@@ -1,0 +1,12 @@
+o código pega um numero desejado pelo usuario
+e multiplica ele por 2
+
+depois ele pede um número qualquer
+e pede para multiplicar por 2
+
+depois ele pega o resultado da multiplicação do numero desejado
+e pede para somar com o numero aleatorio
+
+depois pede para dividir a soma dos dois por 2
+ 
+e subtrair pelo numero aleatorio.
